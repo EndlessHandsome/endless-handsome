@@ -18,7 +18,7 @@ source /home/venv/bin/activate
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
 test -d $LOGDIR || mkdir -p $LOGDIR
-exec gunicorn endlesshandsome.wsgi:application -w $NUM_WORKERS \
+exec gunicorn endlesshandsome.wsgi:application -b 45.78.51.172:80 -w $NUM_WORKERS \
   #--user=$USER --group=$GROUP 
   --log-level=debug \
-  --log-file=$LOGFILE -b 0.0.0.0:8000 2>>$LOGFILE
+  --log-file=$LOGFILE -b 2>>$LOGFILE
