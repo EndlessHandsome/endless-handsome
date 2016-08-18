@@ -63,8 +63,8 @@ target/
 #deploy
 /static/
 /media/
-/endlesshandsome/settings.py
-/endlesshandsome/wsgi.py
+endlesshandsome/settings.py
+endlesshandsome/wsgi.py
 
 #pycharm
 /.idea/
