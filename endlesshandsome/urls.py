@@ -15,11 +15,18 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-from rest.views import userlist,user_name
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^users/(?P<name>\w+)/$', user_name),
-    url(r'^users/', userlist),
+    url(r'', include('website.urls', namespace='website')),
 ]
+
+
+urlpatterns += [
+    url(r'^api/v1/account/',
+        include('account.urls.api', namespace='account_api')),
+]
+ 
+urlpatterns += staticfiles_urlpatterns()
