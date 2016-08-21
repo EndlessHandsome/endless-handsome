@@ -1,0 +1,49 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+a,h5,p{
+	font-family: sans-serif;
+}
+
+.full-container{
+	width: 100%;
+	height: 100%;
+}
+
+.full-container section{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 110%;
+	left: 10%;
+	transition:top .5s;
+}
+
+.nav-2l{
+	padding: 8px;
+}
+.nav-2l a{
+	color: #fff;
+	margin:5px;
+	font-size: 15px;
+}
+.nav-2l a:hover{
+	border-width: 2px 0 2px 0;
+	border-style: solid;
+	border-color: #fff;
+}
+
+.card{
+	height: 300px;
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+}
+.card img{
+	margin-top: 20px;
+	border-radius: 50%;
+	border: 3px solid rgba(175, 175, 175, 0.66);
+}
