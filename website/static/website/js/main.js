@@ -29,5 +29,16 @@ $(function(){
 
 
 	SectionHandler.init();
+
+
+
+	$.ajax({
+		type: "POST",
+		url: "/api/v1/account/resgister",
+		data:{},
+		success:function(data){
+			console.log(data);
+		}
+	});
 	
 });

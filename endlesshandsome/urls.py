@@ -26,7 +26,7 @@ urlpatterns = [
 
 urlpatterns += [
     url(r'^api/v1/account/',
-        include('account.urls.api', namespace='account_api')),
+        include('account.urls', namespace='account_api')),
 ]
  
 urlpatterns += staticfiles_urlpatterns()
